@@ -26,6 +26,6 @@ tar -xzf "$TMP_DIR/xpanel.tar.gz" -C "$TMP_DIR/src"
 
 echo "[3/4] Executando instalador do pacote ..."
 cd "$TMP_DIR/src"
-bash scripts/install.sh
+XPANEL_RELEASE_INSTALL=1 bash scripts/install.sh
 
 echo "[4/4] Instalacao concluida em $BASE_DIR"
